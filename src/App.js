@@ -29,14 +29,13 @@ class App extends Component {
       <div className="App">
         <h1>Give Feedback</h1>
         <Feedback
+          numBad={this.state.numBad}
+          numGood={this.state.numGood}
+          numNeutral={this.state.numNeutral}
           onGood={this.handleGood}
           onBad={this.handleBad}
           onNeutral={this.handleNeutral}
         ></Feedback>
-        <h2>Statistics</h2>
-        <p>Good {this.state.numGood}</p>
-        <p>Neutral {this.state.numNeutral}</p>
-        <p>Bad {this.state.numBad}</p>
       </div>
     );
   }
